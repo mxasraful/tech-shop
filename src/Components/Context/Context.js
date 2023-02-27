@@ -16,6 +16,7 @@ export const ContextProvider = (props) => {
     const [homeFItems, setHomeFItems] = useState(null)
     const [itemsGetError, setItemsGetError] = useState(false)
     const [homeFItemsError, setHomeFItemsError] = useState(false)
+    const [searchResult, serSearchRsult] = useState(null)
 
     const auth = AllAuth()
 
@@ -65,7 +66,7 @@ export const ContextProvider = (props) => {
     console.log(homeFItems)
 
 
-    return <MainContext.Provider value={{ auth, itemsLoading, items, homeFItemsError, homeFitemsLoading, homeFItems, itemsGetError, fullLoading }}>{props.children}</MainContext.Provider>
+    return <MainContext.Provider value={{ auth, itemsLoading, items, homeFItemsError, homeFitemsLoading, homeFItems, itemsGetError, fullLoading, searchResult }}>{props.children}</MainContext.Provider>
 }
 
 export const useMainContext = () => useContext(MainContext)

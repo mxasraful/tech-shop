@@ -3,8 +3,6 @@ import './Shop.css'
 
 const Shop = ({by}) => {
 
-
-
     return (
         <div className="shop-page-main">
             <div className="container mt-3 mb-5">

@@ -104,7 +104,7 @@ const Home = () => {
                                         <div className="row mb-5">
                                             {
                                                 monitorItems?.map(it => (
-                                                    <div className="col-sm-3">
+                                                    <div className="col-sm-3 mb-3">
                                                         <ProductItem item={it} />
                                                     </div>
                                                 ))

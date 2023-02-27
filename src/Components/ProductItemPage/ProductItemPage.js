@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { getDatabase, ref, child, get } from "firebase/database";
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ProductItemPage = () => {
 
@@ -10,11 +14,47 @@ const ProductItemPage = () => {
     const [getItemLoding, setGetItemLoding] = useState(true)
     const [qty, setQty] = useState(1)
     const [selectedVariant, setSelectedVariant] = useState(0)
+    const [selectedImage, setSelectedImage] = useState(null)
 
     const params = useParams()
     const itemId = params?.id
 
-    console.log(itemData)
+    const slides = itemData?.imgs
+
+    const settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
+    }
 
     useEffect(() => {
         if (itemId) {
@@ -25,6 +65,7 @@ const ProductItemPage = () => {
                     setItemData(snapshot.val());
                     setItemDataError(false);
                     setGetItemLoding(false)
+                    setSelectedImage(snapshot.val().imgs[0])
                 } else {
                     setItemDataError(true);
                     setItemData(null);
@@ -73,8 +114,21 @@ const ProductItemPage = () => {
                                                 {
                                                     itemData ?
                                                         <>
-                                                            <div className="col-sm-5" style={{ height: "500px", textAlign: "center" }}>
-                                                                <img src={itemData.imgs[0]} alt="" style={{ maxHeight: "100%", maxWidth: "100%" }} />
+                                                            <div className="col-sm-5">
+                                                                <div className='d-flex justify-content-center align-items-center mb-5' style={{ height: "400px", textAlign: "center" }} >
+                                                                    <img src={selectedImage} alt="" style={{ maxHeight: "100%", maxWidth: "100%" }} />
+                                                                </div>
+                                                                <Slider {...settings}>
+                                                                    {slides?.map((slide, index) => {
+                                                                        return (
+                                                                            <div key={index}>
+                                                                                <div className="border me-1 p-2 rounded d-flex justify-content-center align-items-center" style={{ cursor: "pointer", height: "110px" }} onClick={() => setSelectedImage(slide)}>
+                                                                                    <img className='' src={slide} alt="" style={{ maxHeight: "100%", maxWidth: "100%" }}/>
+                                                                                </div>
+                                                                            </div>
+                                                                        );
+                                                                    })}
+                                                                </Slider>
                                                             </div>
                                                             <div className="col-sm-7">
                                                                 <h4>{itemData.title}</h4>

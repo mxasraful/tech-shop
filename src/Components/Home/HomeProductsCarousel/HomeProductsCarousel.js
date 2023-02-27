@@ -46,8 +46,6 @@ const HomeProductsCarousel = ({items}) => {
         ]
     }
 
-    console.log(slides)
-
     return (
         <div className="mb-5" >
             <Slider {...settings}>
