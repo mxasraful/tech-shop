@@ -1,13 +1,18 @@
-.carousel-item{
-    max-height: 500px !important;
+.home-banner-carousel-item{
+    height: 500px;
 }
 
-.carousel-control-next, .carousel-control-prev {
-    background: #00000030 !important;
-    width: 40px !important;
+.thumbs-wrapper{
+    display: none !important;
 }
 
-.carousel-indicators button{
-    background-color: #000000 !important;
-    height: 8px !important;
+.home-banner-carousel-item-title{
+    opacity: 1 !important;
+    background: none !important;
+    color: #ffffff !important;
+    font-size: 18px !important;
+}
+
+.control-arrow{
+    opacity: 1 !important;
 }

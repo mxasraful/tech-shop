@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { getDatabase, ref, child, get } from "firebase/database";
-import './Banner.css'
 import { Link } from 'react-router-dom';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './Banner.css'
 
-const Banner = () => {
+const Banner = ({ setBannerLoading }) => {
 
-    const [bannerLoading, setBannerLoading] = useState(false)
     const [bannerItems, serBannerItems] = useState(null)
     const [bannerGetError, setBannerGetError] = useState(false)
 
@@ -66,32 +67,20 @@ const Banner = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-9 banner-slider">
-                        <div id="carouselExampleIndicators" class="carousel slide">
-                            <div class="carousel-indicators">
-                                {
-                                    bannerItems && bannerItems.map(item => (
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={bannerItems.indexOf(item)} class={item.active && "active"} aria-current="true" aria-label={"Slide "+bannerItems.indexOf(item)+1}></button>
-                                    ))
-                                }
-                            </div>
-                            <div class="carousel-inner">
-                                {
-                                    bannerItems?.map(item => (
-                                        <div className={item.nu === 1 ? "carousel-item active" : "carousel-item"}>
-                                            <img src={item.bg} class="d-block w-100" alt="..." />
-                                        </div>
-                                    ))
-                                }
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
+                        <Carousel>
+                            {
+                                bannerItems?.map(item => (
+                                    <div className="home-banner-carousel-item d-flex justify-content-center align-items-center">
+                                        <img src={item.bg} alt="" />
+                                        {
+                                            item?.title &&
+                                        <p className="legend home-banner-carousel-item-title">{item?.title}</p>
+                                        }
+                                        <p className="legend home-banner-carousel-item-title">First slide label</p>
+                                    </div>
+                                ))
+                            }
+                        </Carousel>
                     </div>
                     <div className="col-sm-3 banner-cate">
                         <div class="list-group">

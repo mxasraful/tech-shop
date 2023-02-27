@@ -5,13 +5,13 @@ const Search = () => {
     const [searchInput, setSearchInput] = useState(null)
 
     const handleSearch = () => {
-        
+
     }
 
 
     return (
         <div className="header-search-modal">
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -21,7 +21,7 @@ const Search = () => {
                         <div class="modal-body">
                             <div className="w-100 d-flex header-search-modal-form">
                                 <input class="form-control me-2 form-control-lg" type="text" placeholder="Type product or brand name" onChange={(e) => setSearchInput(e.target.value)} />
-                                <input class="btn btn-primary px-5 btn-lg" type="submit" value="SEARCH" onClick={() => handleSearch()} />
+                                <input class="btn btn-primary px-4 btn-lg" type="submit" value="SEARCH" onClick={() => handleSearch()} />
                             </div>
                             <div className="header-search-modal-result my-3">
                                 <div className="header-search-modal-result-view text-center my-3 mt-4">
