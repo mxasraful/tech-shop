@@ -1,0 +1,11 @@
+
+
+/* Navbar */
+
+.nav-item .active{
+  color: #000;
+}
+
+.nav-item .activeTeam{
+  color: #877eff !important;
+}

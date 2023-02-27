@@ -1,0 +1,13 @@
+.carousel-item{
+    max-height: 500px !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    background: #00000030 !important;
+    width: 40px !important;
+}
+
+.carousel-indicators button{
+    background-color: #000000 !important;
+    height: 8px !important;
+}
