@@ -2,35 +2,134 @@
     "banner": [
         {
             "text": false,
+            "bg": "https://unboxingtech.com.bd/public/uploads/all/lldgJRWCmuu134jvVHfGwVsfJFxeJVpq9uvnQsMF.jpg",
+            "nu": 1,
+            "link": "/brand/apple"
+        },
+        {
+            "text": false,
             "bg": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-14-Pro-Max-9001.png",
-            "nu": 4
+            "nu": 4,
+            "link": null
         },
         {
             "text": false,
             "bg": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-31-Dec-22-4267.jpg",
-            "nu": 1
+            "nu": 5,
+            "link": null
         },
         {
             "text": false,
             "bg": "https://adminapi.applegadgetsbd.com/storage/media/large/Bottom-Banner-(2)-6039.jpg",
-            "nu": 2
+            "nu": 2,
+            "link": null
         },
         {
             "text": false,
             "bg": "https://adminapi.applegadgetsbd.com/storage/media/large/Macbook--31-Dec-22-2102.jpg",
-            "nu": 3
+            "nu": 3,
+            "link": null
         }
     ],
     "homefproducts": [
+        "67676643erwdskuuiy4387hfu",
         "606ec8561c25b192342uer2a17",
-        "606ec8561c25b14678022a1d",
+        "606ec8561c25b1923434dj836407",
         "606ec8561c25b14678022a41",
         "606ec8561c25b14678022a2c",
         "606ec8561c25b14678022a3f",
-        "606ec8561c25b14678022a34",
-        "606ec8561c25b14678022a1e"
+        "606ec8561c25b14678022a34"
     ],
     "items": {
+        "67676643erwdskuuiy4387hfu": {
+            "_id": "67676643erwdskuuiy4387hfu",
+            "title": "Samsung Galaxy S23 Ultra 5G",
+            "imgs": [
+                "https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/catalog/product/cache/90e3b9f4120fc209bf60003e3b0e1323/s/a/samsung-galaxy-s23-ultra-phantom-green-7_1.jpg",
+                "https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/catalog/product/cache/90e3b9f4120fc209bf60003e3b0e1323/s/a/samsung-galaxy-s23-ultra-phantom-black-5.jpg",
+                "https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/catalog/product/cache/90e3b9f4120fc209bf60003e3b0e1323/s/a/samsung-galaxy-s23-ultra-phantom-green-1.jpg",
+                "https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/catalog/product/cache/90e3b9f4120fc209bf60003e3b0e1323/s/a/samsung-galaxy-s23-ultra-phantom-green-2.jpg",
+                "https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/catalog/product/cache/90e3b9f4120fc209bf60003e3b0e1323/s/a/samsung-galaxy-s23-ultra-phantom-green-3.jpg",
+                "https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/catalog/product/cache/90e3b9f4120fc209bf60003e3b0e1323/s/a/samsung-galaxy-s23-ultra-phantom-green-4.jpg",
+                "https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/catalog/product/cache/90e3b9f4120fc209bf60003e3b0e1323/s/a/samsung-galaxy-s23-ultra-cream-9_1.jpg",
+                "https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/catalog/product/cache/90e3b9f4120fc209bf60003e3b0e1323/s/a/samsung-galaxy-s23-ultra-phantom-black-8_1.jpg"
+            ],
+            "brand": "Samsung",
+            "variant": [
+                "12GB/512GB"
+            ],
+            "specifications": [
+                [
+                    " Brand",
+                    "Samsung"
+                ],
+                [
+                    " SKU",
+                    "SMGXS23U"
+                ],
+                [
+                    " Warranty Information",
+                    " 12 Months Official Warranty"
+                ],
+                [
+                    "Emi Available",
+                    "24 Months"
+                ],
+                [
+                    "Display Size (Inches)",
+                    " 6.8"
+                ],
+                [
+                    "Front Camera: ",
+                    "12MP Camera (AF, F2.2 Aperture)"
+                ],
+                [
+                    "System Storage ",
+                    " 512GB"
+                ],
+                [
+                    "RAM(GB)",
+                    " 12GB"
+                ],
+                [
+                    "SIM Card",
+                    " Nano + eSIM"
+                ],
+                [
+                    "Processor: ",
+                    "Snapdragon® 8 Gen 2 Processor"
+                ],
+                [
+                    "CPU Speed(Ghz)",
+                    " 4nm 64-bit Octa-Core Processor * 3.36GHz (Maximum Clock Speed) + 2.8GHz + 2.0GHz"
+                ],
+                [
+                    "Connectivity: ",
+                    "Wi-Fi 802.11 a/b/g/n/ac/ax 2.4G+5GHz+6GHz | Bluetooth® v 5.3 | USB type-C | NFC | GPS"
+                ],
+                [
+                    "Battery mAh",
+                    " 5000mAh | 45W/25W USB PD 3.0 Super Fast Charging | Fast Wireless Charging 2.0 | Wireless PowerShare"
+                ],
+                [
+                    "Back Camera",
+                    " 12MP (Ultra Wide) + 200MP (Wide) + 10MP (Telephoto) + 10MP (Telephoto) | 100X Space Zoom"
+                ],
+                [
+                    "Phone Model",
+                    " Samsung Galaxy S23 Ultra 5G"
+                ],
+                [
+                    "Extra Features ",
+                    "Dolby Stereo speakers | Ultrasonic Fingerprint Sensor | S Pen Included"
+                ]
+            ],
+            "about": null,
+            "price": [
+                "1699"
+            ],
+            "category": "mobile"
+        },
         "67676643erwer234324342uer2a17": {
             "_id": "67676643erwer234324342uer2a17",
             "title": "iPhone SE 2022",
@@ -44,26 +143,41 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
-                "Display Size",
-                "Display Type",
-                "Display Resolution",
-                "Chipset",
-                "Memory",
-                "Main Camera",
-                "Selfie Camera",
-                "Battery Info"
+            "specifications": [
+                [
+                    "Display Size",
+                    "4.7 inches"
+                ],
+                [
+                    "Display Type",
+                    "Retina IPS LCD, 625 nits (typ)"
+                ],
+                [
+                    "Display Resolution",
+                    "750 x 1334 pixels, 16:9 ratio"
+                ],
+                [
+                    "Chipset",
+                    "Apple A15 Bionic (5 nm)"
+                ],
+                [
+                    "Memory",
+                    "128GB 4GB RAM "
+                ],
+                [
+                    "Main Camera",
+                    "12 MP | 4K@24/30/60fps"
+                ],
+                [
+                    "Selfie Camera",
+                    "7 MP | 1080p@30/120fps; gyro-EIS"
+                ],
+                [
+                    "Battery Info",
+                    "Li-Ion 2018 mAh, non-removable, 7.5W wireless (Qi)"
+                ]
             ],
-            "featuresValue": [
-                "4.7 inches",
-                "Retina IPS LCD, 625 nits (typ)",
-                "750 x 1334 pixels, 16:9 ratio",
-                "Apple A15 Bionic (5 nm)",
-                "128GB 4GB RAM ",
-                "12 MP | 4K@24/30/60fps",
-                "7 MP | 1080p@30/120fps; gyro-EIS",
-                "Li-Ion 2018 mAh, non-removable, 7.5W wireless (Qi)"
-            ],
+            "featuresValue": [],
             "about": [
                 ""
             ],
@@ -85,26 +199,41 @@
             "variant": [
                 "8GB / 128GB"
             ],
-            "featuresTitle": [
-                "Display Size",
-                "Display Type",
-                "Display Resolution",
-                "Chipset",
-                "Memory",
-                "Main Camera",
-                "Selfie Camera",
-                "Battery Info"
+            "specifications": [
+                [
+                    "Display Size",
+                    "6.3 inches, 96.7 cm2 (~84.9% screen-to-body ratio)"
+                ],
+                [
+                    "Display Type",
+                    "AMOLED, 90Hz, HDR10+, 1000 nits (HBM), 1400 nits (peak)"
+                ],
+                [
+                    "Display Resolution",
+                    "1080 x 2400 pixels, 20:9 ratio (~416 ppi density)"
+                ],
+                [
+                    "Chipset",
+                    "Google Tensor G2 (5 nm)"
+                ],
+                [
+                    "Memory",
+                    "128GB 8GB RAM | 256GB 8GB RAM"
+                ],
+                [
+                    "Main Camera",
+                    "50MP + 12MP"
+                ],
+                [
+                    "Selfie Camera",
+                    "10.8MP | 4K@30/60fps, 1080p@30/60fps"
+                ],
+                [
+                    "Battery Info",
+                    "Li-Ion 4355 mAh, non-removable"
+                ]
             ],
-            "featuresValue": [
-                "6.3 inches, 96.7 cm2 (~84.9% screen-to-body ratio)",
-                "AMOLED, 90Hz, HDR10+, 1000 nits (HBM), 1400 nits (peak)",
-                "1080 x 2400 pixels, 20:9 ratio (~416 ppi density)",
-                "Google Tensor G2 (5 nm)",
-                "128GB 8GB RAM | 256GB 8GB RAM",
-                "50MP + 12MP",
-                "10.8MP | 4K@30/60fps, 1080p@30/60fps",
-                "Li-Ion 4355 mAh, non-removable"
-            ],
+            "featuresValue": [],
             "about": [
                 ""
             ],
@@ -127,25 +256,39 @@
             "variant": [
                 "8GB / 128GB"
             ],
-            "featuresTitle": [
-                "Display Size",
-                "Display Type",
-                "Display Resolution",
-                "Chipset",
-                "Memory",
-                "Main Camera",
-                "Selfie Camera",
-                "Battery Info"
-            ],
-            "featuresValue": [
-                "6.8 inches, 114.7 cm2 (~90.2% screen-to-body ratio)",
-                "Dynamic AMOLED 2X, 120Hz, HDR10+, 1750 nits (peak)",
-                "1440 x 3088 pixels (~500 ppi density)",
-                "Exynos 2200 (4 nm) | Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm)",
-                "128GB 8GB RAM |256GB 12GB RAM | 512GB 12GB RAM | 1TB 12GB RAM",
-                "108MP + 10MP + 10MP + 12MP",
-                "40MP | 4K@30/60fps, 1080p@30fps",
-                "Li-Ion 5000 mAh, non-removable"
+            "specifications": [
+                [
+                    "Display Size",
+                    "6.8 inches, 114.7 cm2 (~90.2% screen-to-body ratio)"
+                ],
+                [
+                    "Display Type",
+                    "Dynamic AMOLED 2X, 120Hz, HDR10+, 1750 nits (peak)"
+                ],
+                [
+                    "Display Resolution",
+                    "1440 x 3088 pixels (~500 ppi density)"
+                ],
+                [
+                    "Chipset",
+                    "Exynos 2200 (4 nm) | Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm)"
+                ],
+                [
+                    "Memory",
+                    "128GB 8GB RAM |256GB 12GB RAM | 512GB 12GB RAM | 1TB 12GB RAM"
+                ],
+                [
+                    "Main Camera",
+                    "108MP + 10MP + 10MP + 12MP"
+                ],
+                [
+                    "Selfie Camera",
+                    "40MP | 4K@30/60fps, 1080p@30fps"
+                ],
+                [
+                    "Battery Info",
+                    "Li-Ion 5000 mAh, non-removable"
+                ]
             ],
             "about": [
                 ""
@@ -170,7 +313,7 @@
             "variant": [
                 "8GB RAM - 256GB SSD"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -201,7 +344,7 @@
             "variant": [
                 "8GB / 128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -231,20 +374,13 @@
                 "128GB",
                 "256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Brand",
                 "Display Size",
                 "Operating System",
                 "Storage"
             ],
             "bannerF": true,
-            "featuresValue": [
-                "Unlocked",
-                "Samsung Electronics",
-                "6.9 Inches",
-                "Android",
-                "128GB, 256GB"
-            ],
             "about": [
                 "Power of 5G: Get next-level power for everything you love to do with Samsung Galaxy 5G; Share more, game harder, experience more and never miss a beat",
                 "Single Take AI: Capture video and multiple types of images with one tap of the shutter button; Lenses, effects and filters capture the best of every moment, every time",
@@ -276,7 +412,7 @@
             "variant": [
                 "49'"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -295,22 +431,24 @@
         },
         "606ec8561c25b14678022a1d": {
             "_id": "606ec8561c25b14678022a1d",
-            "title": "Samsung Galaxy Note 20",
+            "title": "Samsung Galaxy Note 20 Ultra 5G",
             "imgs": [
-                "https://images.samsung.com/us/smartphones/galaxy-note20/pdp/gallery/canvas1/Bronze/Gallery-03-C1-Back-MysticBronze-1600x1200.jpg",
-                "https://images-na.ssl-images-amazon.com/images/I/51f8QKnSnDL._AC_SL1000_.jpg",
-                "https://images-na.ssl-images-amazon.com/images/I/41fdLkad2LL._AC_SL1000_.jpg",
-                "https://images-na.ssl-images-amazon.com/images/I/61qmQ0PfBKL._AC_SL1000_.jpg"
+                "https://images.samsung.com/is/image/samsung/p6pim/bd/sm-n986bzngbkd/gallery/bd-galaxy-note20-ultra-5g-n986-sm-n986bzngbkd-456286389?$650_519_PNG$",
+                "https://images.samsung.com/is/image/samsung/p6pim/bd/sm-n986bzngbkd/gallery/bd-galaxy-note20-ultra-5g-n986-sm-n986bzngbkd-456286362?$684_547_PNG$",
+                "https://images.samsung.com/is/image/samsung/p6pim/bd/sm-n986bzngbkd/gallery/bd-galaxy-note20-ultra-5g-n986-sm-n986bzngbkd-456286364?$684_547_PNG$",
+                "https://images.samsung.com/is/image/samsung/p6pim/bd/sm-n986bzngbkd/gallery/bd-galaxy-note20-ultra-5g-n986-sm-n986bzngbkd-456286366?$684_547_PNG$",
+                "https://images.samsung.com/is/image/samsung/p6pim/bd/sm-n986bzngbkd/gallery/bd-galaxy-note20-ultra-5g-n986-sm-n986bzngbkd-456286367?$684_547_PNG$",
+                "https://images.samsung.com/is/image/samsung/p6pim/bd/sm-n986bzkgbkd/gallery/bd-galaxy-note20-ultra-5g-n986-sm-n986bzkgbkd-456286360?$1300_1038_PNG$",
+                "https://images.samsung.com/is/image/samsung/p6pim/bd/sm-n986bzkgbkd/gallery/bd-galaxy-note20-ultra-5g-n986-sm-n986bzkgbkd-456286333?$684_547_PNG$"
             ],
             "brand": "Samsung",
             "variant": [
                 "Mystic Bronze",
-                "Mystic Gray",
                 "Mystic Green"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
-                "Brand\tSamsung",
+                "Brand",
                 "Display Size",
                 "Operating System",
                 "Memory Storage Capacity"
@@ -318,14 +456,13 @@
             "bannerF": false,
             "featuresValue": [
                 "T-Mobile",
-                "Electronics",
+                "Samsung Electronics",
                 "6.3 Inches",
                 "Android",
                 "256 GB"
             ],
             "price": [
-                824,
-                824,
+                699,
                 669
             ],
             "id": "R6756756GYHJT6Y6UTYUT67RTHRTYU",
@@ -349,7 +486,7 @@
                 "Sword Black",
                 "Blade Silver"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
                 "Brand\tSamsung",
                 "Display Size",
@@ -388,7 +525,7 @@
                 "32GB / 256GB",
                 "48GB / 1TB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -419,7 +556,7 @@
             "variant": [
                 "8GB Memory - 256GB SSD"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -447,7 +584,7 @@
             "variant": [
                 "32 GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
                 "Brand\tSamsung",
                 "Display Size",
@@ -486,7 +623,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -542,7 +679,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Display Size",
                 "Display Type",
                 "Display Resolution",
@@ -586,7 +723,7 @@
             "variant": [
                 "256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -641,7 +778,7 @@
                 "8GB / 256GB",
                 "16GB / 512GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -672,7 +809,7 @@
             "variant": [
                 "8GB / 256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -705,7 +842,7 @@
             "variant": [
                 "12GB RAM - 256 GB SSD"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -736,7 +873,7 @@
             "variant": [
                 "256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -750,7 +887,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -791,7 +928,7 @@
             "variant": [
                 "Aura Black"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
                 "Brand\tSamsung",
                 "Display Size",
@@ -826,7 +963,7 @@
             "variant": [
                 "256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Brand",
                 "Operating System",
                 "CPU Manufacturer",
@@ -866,7 +1003,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -921,7 +1058,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -935,7 +1072,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -978,7 +1115,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
                 "Brand",
                 "Display Size",
@@ -1014,7 +1151,7 @@
             "variant": [
                 "256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -1028,7 +1165,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -1072,7 +1209,7 @@
             "variant": [
                 "4GB Memory - 128GB SSD"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -1102,7 +1239,7 @@
                 "8GB / 256GB",
                 "16GB / 1TB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -1133,7 +1270,7 @@
             "variant": [
                 "24\""
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "bannerF": false,
@@ -1163,7 +1300,7 @@
             "variant": [
                 "24\""
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "bannerF": false,
@@ -1195,7 +1332,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -1209,7 +1346,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -1253,7 +1390,7 @@
                 "128GB",
                 "512GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
                 "Brand",
                 "Display Size",
@@ -1298,7 +1435,7 @@
                 "Aurora",
                 "Stellar Black"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "GPU",
@@ -1350,7 +1487,7 @@
                 "256GB",
                 "512GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
                 "Brand",
                 "Display Size",
@@ -1387,7 +1524,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Brand",
                 "Display Size",
                 "Operating System",
@@ -1425,7 +1562,7 @@
             "variant": [
                 "32GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -1439,7 +1576,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -1488,7 +1625,7 @@
             "variant": [
                 "12GB Memory - 512GB SSD"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -1521,7 +1658,7 @@
                 "128GB",
                 "256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -1556,7 +1693,7 @@
             "variant": [
                 "512GB SSD + 32GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -1586,7 +1723,7 @@
             "variant": [
                 "16GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Brand",
                 "Display Size",
                 "Operating System",
@@ -1623,7 +1760,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -1637,7 +1774,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -1680,7 +1817,7 @@
             "variant": [
                 "12GB/256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -1711,7 +1848,7 @@
             "variant": [
                 "8GB / 256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
                 "Brand",
                 "Display Size",
@@ -1749,7 +1886,7 @@
             "variant": [
                 "16GB Memory - 1TB SSD"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -1778,7 +1915,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -1792,7 +1929,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -1833,7 +1970,7 @@
             "variant": [
                 "12GB Memory - 512GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -1865,7 +2002,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -1879,7 +2016,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -1927,7 +2064,7 @@
                 "Infinite Black",
                 "Infinite Blue"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
                 "Brand\tSamsung",
                 "Display Size",
@@ -1964,7 +2101,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -1978,7 +2115,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -2020,7 +2157,7 @@
             "variant": [
                 "128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -2034,7 +2171,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,
@@ -2078,7 +2215,7 @@
             "variant": [
                 "32GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -2138,7 +2275,7 @@
                 "Cloud Red",
                 "Cloud White"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Service Provider",
                 "Brand",
                 "Display Size",
@@ -2181,7 +2318,7 @@
                 "Standard glass",
                 "Nano-texture glass"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -2214,7 +2351,7 @@
             "variant": [
                 " 512GB SSD + 32GB RAM"
             ],
-            "featuresTitle": [
+            "specifications": [
                 ""
             ],
             "featuresValue": [
@@ -2245,7 +2382,7 @@
             "variant": [
                 "8GB/128GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "SKU",
                 "Warranty Information",
                 "Display Size(Inches)",
@@ -2297,7 +2434,7 @@
             "variant": [
                 "512GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "Brand",
                 "CPU Model",
                 "Computer Memory Size",
@@ -2339,7 +2476,7 @@
             "variant": [
                 "256GB"
             ],
-            "featuresTitle": [
+            "specifications": [
                 "OS",
                 "CPU",
                 "CPU Cores",
@@ -2353,7 +2490,7 @@
                 "Resolution",
                 "Battery",
                 "Connectivity",
-                "Bluetooth Version:",
+                "Bluetooth Version",
                 "Sensors"
             ],
             "bannerF": false,

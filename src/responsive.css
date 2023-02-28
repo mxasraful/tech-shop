@@ -1,27 +1,43 @@
 @media only screen and (max-width: 991px) {
-    .mobile-cart-btn{
+    .mobile-cart-btn {
         display: inherit !important;
     }
 
-    .banner-slider{
+    .banner-slider {
         width: 100% !important;
     }
 
-    .banner-cate{
+    .banner-cate {
         display: none;
     }
 }
 
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) { 
-    .home-banner-carousel-item{
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .home-banner-carousel-item {
         height: 440px !important;
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) { 
-    .home-banner-carousel-item{
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .home-banner-carousel-item {
         height: 375px !important;
+    }
+
+    .nav-item-Smart {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .header-desktop-cart-btn,
+    .header-search-modal-desktop-btn {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        align-items: baseline !important;
     }
 }
 
@@ -36,11 +52,10 @@
     px      68    160    252    344    436    528    620    712    */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .home-banner-carousel-item{
+    .home-banner-carousel-item {
         height: 370px !important;
     }
 }
-
 
 
 /*		Mobile Layout: 320px.
@@ -52,10 +67,20 @@
     px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
+    .dropdown-menu-Brands {
+        width: 100% !important;
+    }
 
+    .nav-item-Brands {
+        width: 95% !important;
+    }
+
+    .footer-item-mx {
+        display: none !important;
+    }
 }
 
-/*		Wide Mobile Layout: 480px.
+/*		Wide Mobile Layout: 480px
             Gutters: 24px.
             Outer margins: 22px.
             Inherits styles from: Default Layout, Mobile Layout.
@@ -64,14 +89,20 @@
     px      68    160    252    344    436    */
 
 @media only screen and (min-width: 535px) and (max-width: 767px) {
-    .home-banner-carousel-item{
+    .home-banner-carousel-item {
         height: 265px !important;
     }
 }
 
-@media only screen and (max-width: 535px) { 
-    .home-banner-carousel-item{
+@media only screen and (min-width: 321px) and (max-width: 535px) {
+    .home-banner-carousel-item {
         height: 230px !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .home-banner-carousel-item {
+        height: 163px !important;
     }
 }
 

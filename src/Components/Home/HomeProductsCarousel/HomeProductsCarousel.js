@@ -7,7 +7,7 @@ import "./HomeProductsCarousel.css";
 import ProductItem from "../../ProductItem/ProductItem";
 
 
-const HomeProductsCarousel = ({items}) => {
+const HomeProductsCarousel = ({ items, itemsId }) => {
 
     const slides = items
 
@@ -46,17 +46,37 @@ const HomeProductsCarousel = ({items}) => {
         ]
     }
 
+    console.log(items)
+
     return (
         <div className="mb-5" >
-            <Slider {...settings}>
-                {slides?.map((slide, index) => {
-                    return (
-                        <div key={index}>
-                            <ProductItem itemId={slide} />
-                        </div>
-                    );
-                })}
-            </Slider>
+            {
+                items ?
+                    <>
+                        <Slider {...settings}>
+                            {items?.map((slide, index) => {
+                                console.log("slide", slide)
+                                return (
+                                    <div key={index}>
+                                        <ProductItem item={slide} itemId={null} />
+                                    </div>
+                                );
+                            })}
+                        </Slider>
+                    </>
+                    :
+                    <>
+                        <Slider {...settings}>
+                            {itemsId?.map((slide, index) => {
+                                return (
+                                    <div key={index}>
+                                        <ProductItem item={null} itemId={slide} />
+                                    </div>
+                                );
+                            })}
+                        </Slider>
+                    </>
+            }
         </div >
     );
 }

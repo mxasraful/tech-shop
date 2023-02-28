@@ -28,7 +28,7 @@ const ProductItem = ({ item, itemId }) => {
             setItemaLoading(false)
         });
     }, [itemId])
-
+    
     return (
         <div className="card product-item-card" style={{ height: "430px", width: "94%" }}>
             {

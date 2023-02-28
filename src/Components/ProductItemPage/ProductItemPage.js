@@ -122,8 +122,8 @@ const ProductItemPage = () => {
                                                                     {slides?.map((slide, index) => {
                                                                         return (
                                                                             <div key={index}>
-                                                                                <div className="border me-1 p-2 rounded d-flex justify-content-center align-items-center" style={{ cursor: "pointer", height: "110px" }} onClick={() => setSelectedImage(slide)}>
-                                                                                    <img className='' src={slide} alt="" style={{ maxHeight: "100%", maxWidth: "100%" }}/>
+                                                                                <div className={selectedImage === slide ? "me-1 p-2 rounded d-flex justify-content-center align-items-center": "border me-1 p-2 rounded d-flex justify-content-center align-items-center"} style={{ cursor: "pointer", height: "110px", border: selectedImage === slide && "1px solid #000" }} onClick={() => setSelectedImage(slide)}>
+                                                                                    <img className='' src={slide} alt="" style={{ maxHeight: "100%", maxWidth: "100%" }} />
                                                                                 </div>
                                                                             </div>
                                                                         );
@@ -202,35 +202,57 @@ const ProductItemPage = () => {
                                                                 </div>
                                                                 <div className="mt-4">
                                                                     <h6>Specifications:</h6>
-                                                                    <div class="item-view-specifications-table mt-3 d-flex">
-                                                                        {
-                                                                            itemData.featuresTitle.length > 1 ?
-                                                                                <>
-                                                                                    <div className="col-3 border">
-                                                                                        {
-                                                                                            itemData.featuresTitle?.map(it =>
-                                                                                            (
-                                                                                                <div className="border-bottom ps-2 pe-1 py-2">{it}</div>
-                                                                                            )
-                                                                                            )
-                                                                                        }
-                                                                                    </div>
-                                                                                    <div className="col-9 border-top border-end border-bottom">
-                                                                                        {
-                                                                                            itemData.featuresValue?.map(it =>
-                                                                                            (
-                                                                                                <div className="border-bottom ps-2 pe-1 py-2 d-block">{it}</div>
-                                                                                            )
-                                                                                            )
-                                                                                        }
-                                                                                    </div>
-                                                                                </>
-                                                                                :
-                                                                                <span className="py-1">
-                                                                                    Specification Not Found
-                                                                                </span>
-                                                                        }
-                                                                    </div>
+                                                                    {
+                                                                        itemData.featuresValue?.length > 1 ?
+                                                                            <div class="item-view-specifications-table mt-3 d-flex">
+                                                                                <div className="col-3 border">
+                                                                                    {
+                                                                                        itemData.specifications?.map(it =>
+                                                                                        (
+                                                                                            <div className="border-bottom ps-2 pe-1 py-2">{it}</div>
+                                                                                        )
+                                                                                        )
+                                                                                    }
+                                                                                </div>
+                                                                                <div className="col-9 border-top border-end border-bottom">
+                                                                                    {
+                                                                                        itemData.featuresValue?.map(it =>
+                                                                                        (
+                                                                                            <div className="border-bottom ps-2 pe-1 py-2 d-block">{it}</div>
+                                                                                        )
+                                                                                        )
+                                                                                    }
+                                                                                </div>
+                                                                            </div>
+                                                                            :
+                                                                            <>
+                                                                                {
+                                                                                    itemData.specifications?.length > 1 ?
+                                                                                        <div class="item-view-specifications-table mt-3 d-flex">
+                                                                                            <table class="table table-bordered">
+                                                                                                <tbody>
+                                                                                                {
+                                                                                                    itemData.specifications?.map(it =>
+                                                                                                    (
+                                                                                                        <tr>
+                                                                                                            <th scope="row">{it[0]}</th>
+                                                                                                            <td>{it[1]}</td>
+                                                                                                        </tr>
+                                                                                                    )
+                                                                                                    )
+                                                                                                }
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        :
+                                                                                        <div class="item-view-specifications-table mt-3 d-flex">
+                                                                                            <span className="py-1">
+                                                                                                Specification Not Found
+                                                                                            </span>
+                                                                                        </div>
+                                                                                }
+                                                                            </>
+                                                                    }
                                                                 </div>
                                                             </div>
                                                         </>

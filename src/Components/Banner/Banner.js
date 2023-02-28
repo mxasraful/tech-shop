@@ -60,7 +60,6 @@ const Banner = ({ setBannerLoading }) => {
         });
     }, [])
 
-    console.log()
 
     return (
         <div className='banner-main mt-3'>
@@ -70,14 +69,13 @@ const Banner = ({ setBannerLoading }) => {
                         <Carousel>
                             {
                                 bannerItems?.map(item => (
-                                    <div className="home-banner-carousel-item d-flex justify-content-center align-items-center">
+                                    <Link to={item.link && item.link} className="home-banner-carousel-item d-flex justify-content-center align-items-center">
                                         <img src={item.bg} alt="" />
                                         {
                                             item?.title &&
                                         <p className="legend home-banner-carousel-item-title">{item?.title}</p>
                                         }
-                                        <p className="legend home-banner-carousel-item-title">First slide label</p>
-                                    </div>
+                                    </Link>
                                 ))
                             }
                         </Carousel>
