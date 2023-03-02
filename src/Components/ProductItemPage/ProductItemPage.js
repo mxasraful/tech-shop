@@ -75,7 +75,7 @@ const ProductItemPage = () => {
                 setItemDataError(true);
                 setItemData(null);
                 setGetItemLoding(false)
-                setItemDataErrorMsg(error)
+                setItemDataErrorMsg(error.message)
             });
         } else {
             setItemDataError(true);
@@ -106,7 +106,7 @@ const ProductItemPage = () => {
                                                 <div className="text-center">
                                                     <img style={{ width: "150px" }} className="mb-3" src="https://hautesignatures.com/images/utilities/empty_product.svg" alt="" />
                                                     <h6>Product Not Found!</h6>
-                                                    <small>We did not find any product. Please try again!</small>
+                                                    <small>{itemDataErrorMsg}</small>
                                                 </div>
                                             </div>
                                             :
@@ -122,7 +122,7 @@ const ProductItemPage = () => {
                                                                     {slides?.map((slide, index) => {
                                                                         return (
                                                                             <div key={index}>
-                                                                                <div className={selectedImage === slide ? "me-1 p-2 rounded d-flex justify-content-center align-items-center": "border me-1 p-2 rounded d-flex justify-content-center align-items-center"} style={{ cursor: "pointer", height: "110px", border: selectedImage === slide && "1px solid #000" }} onClick={() => setSelectedImage(slide)}>
+                                                                                <div className={selectedImage === slide ? "me-1 p-2 rounded d-flex justify-content-center align-items-center" : "border me-1 p-2 rounded d-flex justify-content-center align-items-center"} style={{ cursor: "pointer", height: "110px", border: selectedImage === slide && "1px solid #000" }} onClick={() => setSelectedImage(slide)}>
                                                                                     <img className='' src={slide} alt="" style={{ maxHeight: "100%", maxWidth: "100%" }} />
                                                                                 </div>
                                                                             </div>
@@ -231,16 +231,16 @@ const ProductItemPage = () => {
                                                                                         <div class="item-view-specifications-table mt-3 d-flex">
                                                                                             <table class="table table-bordered">
                                                                                                 <tbody>
-                                                                                                {
-                                                                                                    itemData.specifications?.map(it =>
-                                                                                                    (
-                                                                                                        <tr>
-                                                                                                            <th scope="row">{it[0]}</th>
-                                                                                                            <td>{it[1]}</td>
-                                                                                                        </tr>
-                                                                                                    )
-                                                                                                    )
-                                                                                                }
+                                                                                                    {
+                                                                                                        itemData.specifications?.map(it =>
+                                                                                                        (
+                                                                                                            <tr>
+                                                                                                                <th scope="row">{it[0]}</th>
+                                                                                                                <td>{it[1]}</td>
+                                                                                                            </tr>
+                                                                                                        )
+                                                                                                        )
+                                                                                                    }
                                                                                                 </tbody>
                                                                                             </table>
                                                                                         </div>

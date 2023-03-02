@@ -78,6 +78,19 @@
     .footer-item-mx {
         display: none !important;
     }
+
+    .filter-offcanvas-toggler{
+        display: block !important;
+    }
+    
+    .filter-offcanvas{
+        display: flex !important;
+        visibility: none !important;
+    }
+    
+    .offcanvas-header{
+        display: block !important;
+    }
 }
 
 /*		Wide Mobile Layout: 480px

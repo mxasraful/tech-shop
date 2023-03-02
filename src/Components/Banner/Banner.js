@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getDatabase, ref, child, get } from "firebase/database";
+import { getDatabase, ref, child, get, push, update, query, limitToLast } from "firebase/database";
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -40,6 +40,7 @@ const Banner = ({ setBannerLoading }) => {
         },
     ]
 
+
     // Get Items From Database
     useEffect(() => {
         const dbRef = ref(getDatabase());
@@ -73,7 +74,7 @@ const Banner = ({ setBannerLoading }) => {
                                         <img src={item.bg} alt="" />
                                         {
                                             item?.title &&
-                                        <p className="legend home-banner-carousel-item-title">{item?.title}</p>
+                                            <p className="legend home-banner-carousel-item-title">{item?.title}</p>
                                         }
                                     </Link>
                                 ))

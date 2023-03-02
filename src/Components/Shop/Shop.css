@@ -1,0 +1,12 @@
+.filter-offcanvas-toggler{
+    display: none
+}
+
+.filter-offcanvas{
+    display: contents ;
+    visibility: visible ;
+}
+
+.offcanvas-header{
+    display: none;
+}

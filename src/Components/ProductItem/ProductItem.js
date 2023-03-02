@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getDatabase, ref, child, get } from "firebase/database";
+import './ProductItem.css'
 
 const ProductItem = ({ item, itemId }) => {
 
@@ -12,7 +13,7 @@ const ProductItem = ({ item, itemId }) => {
     useEffect(() => {
         setItemaLoading(true)
         const dbRef = ref(getDatabase());
-        get(child(dbRef, `items/${itemId}`)).then((snapshot) => {
+        get(child(dbRef, `itemsWithOutDetails/${itemId}`)).then((snapshot) => {
             if (snapshot.exists()) {
                 setGetItem(snapshot.val());
                 setGetItemError(false);
@@ -30,28 +31,28 @@ const ProductItem = ({ item, itemId }) => {
     }, [itemId])
     
     return (
-        <div className="card product-item-card" style={{ height: "430px", width: "94%" }}>
+        <div className="card product-item-card mb-2 ms-2" style={{ height: "430px", width: "94%" }}>
             {
                 itemId ?
                     <>
                         {
                             getItem ?
-                                <Link to={"/product/" + getItem?._id} style={{ textDecoration: "none" }}>
+                                <Link to={"/product/" + getItem?._id} style={{ textDecoration: "none" }} className="product-item">
                                     <div style={{
                                         height: "290px",
                                         width: "96%",
                                         margin: "2%",
-                                        backgroundImage: `url(${getItem?.imgs[0]})`,
+                                        backgroundImage: `url(${getItem?.img})`,
                                         backgroundSize: "contain",
                                         backgroundPosition: "center",
                                         backgroundRepeat: "no-repeat"
                                     }}>
                                     </div>
-                                    <div className="card-body text-dark">
+                                    <div className="card-body">
                                         <h6 className="text-dark">{getItem.title}</h6>
                                         <span className='text-dark'>By <Link className='text-dark' style={{ textDecoration: "none" }} to={'/brand/' + getItem.brand}>{getItem.brand}</Link></span>
                                         <br />
-                                        <h4 className='text-dark'>$ {getItem.price[0]}.00</h4>
+                                        <div className='mt-auto text-danger'><small>Starting </small> <span class="fs-5 ms-1">${getItem.price}.00</span> </div>
                                         <div className="d-flex">
                                             {/* <button type='button' className="btn btn-sm btn-outline-success px-4 w-100">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
@@ -82,12 +83,12 @@ const ProductItem = ({ item, itemId }) => {
                         }
                     </>
                     :
-                    <Link to={"/product/" + item._id} style={{ textDecoration: "none" }}>
+                    <Link to={"/product/" + item._id} style={{ textDecoration: "none" }} className="product-item">
                         <div style={{
                             height: "290px",
                             width: "96%",
                             margin: "2%",
-                            backgroundImage: `url(${item?.imgs[0]})`,
+                            backgroundImage: `url(${item?.img})`,
                             backgroundSize: "contain",
                             backgroundPosition: "center",
                             backgroundRepeat: "no-repeat"
@@ -97,7 +98,7 @@ const ProductItem = ({ item, itemId }) => {
                             <h6 className="text-dark">{item.title}</h6>
                             <span className='text-dark'>By <Link className='text-dark' style={{ textDecoration: "none" }} to={'/brand/' + item.brand}>{item.brand}</Link></span>
                             <br />
-                            <h4 className='text-dark'>$ {item.price[0]}.00</h4>
+                            <div className='mt-auto text-danger'><small>Starting </small>  <span className='fs-5 ms-1'>${item.price}.00</span></div>
                             <div className="d-flex">
                                 {/* <button type='button' className="btn btn-sm btn-outline-success px-4 w-100">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">

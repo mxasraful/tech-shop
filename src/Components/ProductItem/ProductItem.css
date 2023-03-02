@@ -1,0 +1,4 @@
+.product-item-card:hover{
+    box-shadow: 0px 4px 10px 0px #97979775;
+    transition: all .5s;
+}

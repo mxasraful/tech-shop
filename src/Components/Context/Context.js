@@ -24,7 +24,7 @@ export const ContextProvider = (props) => {
     useEffect(() => {
         setItemsLoading(true)
         const dbRef = ref(getDatabase());
-        get(child(dbRef, `items/`)).then((snapshot) => {
+        get(child(dbRef, `itemsWithOutDetails/`)).then((snapshot) => {
             if (snapshot.exists()) {
                 setItems(snapshot.val());
                 setItemsGetError(false);

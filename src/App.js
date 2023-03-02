@@ -14,6 +14,7 @@ import './App.css';
 import './responsive.css'
 import ProductItemPage from "./Components/ProductItemPage/ProductItemPage";
 import Shop from "./Components/Shop/Shop";
+import FooterTop from "./Components/FooterTop/FooterTop";
 
 function App() {
 
@@ -24,11 +25,7 @@ function App() {
       <Router>
         <div className="wrapper-without-footer">
           <Switch>
-            <Route path="/brand/:brandName">
-              <Header />
-              <Shop by="brand"/>
-            </Route>
-            <Route path="/category/:categoryName">
+            <Route path="/:categoryOrBrand/:categoryName">
               <Header />
               <Shop by="category"/>
             </Route>
@@ -46,10 +43,12 @@ function App() {
             <Route exact path="/">
               <Header />
               <Home />
+              <FooterTop />
             </Route>
             <Route exact path="*">
               <Header />
               <ErrorPage />
+              <FooterTop />
             </Route>
           </Switch> 
         </div >

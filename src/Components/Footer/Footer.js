@@ -8,7 +8,6 @@ const Footer = () => {
                 <h6 class="pt-3 footer-item-aw">© All Rights Recerved By <a href="https://AsrafulWeb.com">AsrafulWeb</a></h6>
             </div>
         </footer>
-
     );
 };
 

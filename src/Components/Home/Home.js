@@ -15,29 +15,36 @@ const Home = () => {
     const [bannerLoading, setBannerLoading] = useState(true)
     const [homeLoading, setHomeLoading] = useState()
 
-    const { homeFItemsError, homeFitemsLoading, homeFItems } = useMainContext()
+    const { homeFItemsError, itemsLoading, items, itemsGetError, homeFitemsLoading, homeFItems } = useMainContext()
 
+    // Handle Monitor Items
     useEffect(() => {
-        const dbRef = ref(getDatabase());
-        get(child(dbRef, `items`)).then((snapshot) => {
-            if (snapshot.exists()) {
-                const cObjToArr = Object.entries(snapshot.val())
-                let mitems = []
-                cObjToArr.filter(it => it[1].category === "monitor" && mitems.push(it[1]))
-                setMonitorItems(mitems);
-                setMonitorItemsLoading(false)
-                setMonitorItemsGetError(false)
-                setMonitorItemsGetErrorMsg(null);
+        if (!itemsLoading) {
+            if (!itemsGetError) {
+                if (items) {
+                    const cObjToArr = Object.entries(items)
+                    let mitems = []
+                    cObjToArr.filter(it => it[1].category === "monitor" && mitems.push(it[1]))
+                    setMonitorItems(mitems);
+                    setMonitorItemsLoading(false)
+                    setMonitorItemsGetError(false)
+                    setMonitorItemsGetErrorMsg(null);
+                } else {
+                    setMonitorItemsGetError(true)
+                    setMonitorItemsGetErrorMsg("No data available");
+                    setMonitorItemsLoading(false)
+                }
             } else {
                 setMonitorItemsGetError(true)
-                setMonitorItemsGetErrorMsg("No data available");
+                setMonitorItemsGetErrorMsg("We Got Some Error To Get Monitor Items");
                 setMonitorItemsLoading(false)
             }
-        }).catch((error) => {
-            setMonitorItemsGetError(true)
-            setMonitorItemsGetErrorMsg(error.message);
-        });
-    }, [])
+        } else {
+            setMonitorItemsLoading(true)
+            setMonitorItemsGetError(false)
+            setMonitorItemsGetErrorMsg(null);
+        }
+    }, [items, itemsGetError, itemsLoading])
 
     // Handle Home Loading
     useEffect(() => {
